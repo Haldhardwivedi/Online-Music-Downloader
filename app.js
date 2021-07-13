@@ -21,7 +21,7 @@ app.post('/', (req, res) => {
 
     var options = {
       mode: 'text',
-      pythonPath: 'python3', 
+      pythonPath: '/usr/bin/python3', 
       pythonOptions: ['-u'],
       scriptPath: __dirname,
       args: [videolink]
