@@ -1,5 +1,7 @@
+import subprocess
 import sys
-pipenv install pytube
+
+subprocess.check_call([sys.executable, "-m", "pip", "install", "pytube"])
 from pytube import YouTube
 
 
