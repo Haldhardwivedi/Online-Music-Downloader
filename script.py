@@ -7,7 +7,7 @@ try:
     vid_link=str(sys.argv[1])
     yt =YouTube(vid_link)
     video = yt.streams.filter(only_audio=True).first()
-    video.download() 
+    video.download(SAVE_PATH) 
 except: 
     print("Some Error!") 
 #ytmd.Downloader(sys.argv[1]);
