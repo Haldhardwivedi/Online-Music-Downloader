@@ -1,6 +1,7 @@
 import sys
 from pytube import YouTube
-
+import os
+os.system('python3 -m pip install pytube')
 
 vid_link=str(sys.argv[1])
 yt =YouTube(vid_link)
