@@ -1,13 +1,14 @@
 import sys
 from  pytube import YouTube
 
-SAVE_PATH ="/"
+
 
 vid_link=str(sys.argv[1])
 yt =YouTube(vid_link)
 video = yt.streams.filter(only_audio=True).first()
+
 try:
-    video.download(SAVE_PATH) 
+    video.download() 
 except: 
     print("Some Error!") 
 #ytmd.Downloader(sys.argv[1]);
