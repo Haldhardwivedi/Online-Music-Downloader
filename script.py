@@ -1,7 +1,4 @@
-import subprocess
 import sys
-
-subprocess.check_call([sys.executable, "-m", "pip3", "install", "pytube"])
 from pytube import YouTube
 
 
