@@ -23,7 +23,7 @@ app.post('/', (req, res) => {
       mode: 'text',
       pythonPath: '/usr/bin/python3', 
       pythonOptions: ['-u'],
-      scriptPath: '/ytapp',
+      scriptPath: __dirname,
       args: [videolink]
     };
 
