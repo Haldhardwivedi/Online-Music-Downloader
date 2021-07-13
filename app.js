@@ -32,8 +32,9 @@ app.post('/', (req, res) => {
       if (err) throw err;
       // results is an array consisting of messages collected during execution
       console.log('results: %j', results);
-      res.download(videolink);
+      res.download(__dirname+videolink);
     });
+    res.sendFile(__dirname +"/downloaded.html");
 })
 app.listen(port, () => console.log(`Example app listening on port 
 ${port}!`))
