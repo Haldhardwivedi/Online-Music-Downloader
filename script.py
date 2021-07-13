@@ -1,5 +1,5 @@
 import sys
-from __main__ import YouTube
+from  pytube/__main__ import YouTube
 
 vid_link=str(sys.argv[1])
 yt =YouTube(vid_link)
