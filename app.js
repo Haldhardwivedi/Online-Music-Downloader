@@ -6,6 +6,18 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT;
 
+var package_name = 'pytube'
+let options = {
+    args : [package_name]
+}
+PythonShell.run('./install_package.py', options, 
+    function(err, results)
+    {
+        if (err) throw err;
+        else console.log(results);
+    })
+
+
 app.use(express.static(path.join(__dirname, 'public/css')));
 
 app.use(bodyParser.urlencoded({
