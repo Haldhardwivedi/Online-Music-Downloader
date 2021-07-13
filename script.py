@@ -1,6 +1,6 @@
 import sys
+pipenv install pytube
 from pytube import YouTube
-sys.stdout.flush()
 
 
 vid_link=str(sys.argv[1])
