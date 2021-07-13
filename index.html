@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Music Downloader</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        form
+        {
+            position:absolute;
+            top:30%;
+            left:25%;
+            width:50%;
+        }
+        h1{
+            position:absolute;
+            top:15%;
+            left:35%;
+        }
+        .form-control
+        {
+            border-width: 5px;
+            border-color:greenyellow;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Online Music Downloader</h1>
+            <form action="/" method="POST">
+                    <input type="text" name="vlink" placeholder="Enter The Link To Download" class="form-control">
+                    <button type="submit" class="btn btn-success" >Download</button>
+            </form>
+    </center>
+</body>
+</html>
