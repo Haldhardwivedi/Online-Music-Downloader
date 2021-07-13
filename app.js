@@ -13,11 +13,11 @@ app.use(bodyParser.urlencoded({
     extended:true
 }));
 
-app.get('https://onlinemusicdownloader.herokuapp.com/',function(req,res){
+app.get('/',function(req,res){
     res.sendFile(__dirname + "/index.html");
 });
 
-app.post('https://onlinemusicdownloader.herokuapp.com/', (req, res) => {
+app.post('/', (req, res) => {
     let videolink=req.body.vlink;
 
     var options = {
