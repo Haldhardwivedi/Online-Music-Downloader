@@ -1,7 +1,7 @@
 import sys
 from  pytube import YouTube
 
-SAVE_PATH ="/home/haldhar/Downloads"
+SAVE_PATH ="/home/haldhar/Downloads/"
 
 try:
     vid_link=str(sys.argv[1])
