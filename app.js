@@ -32,7 +32,7 @@ app.post('/', (req, res) => {
       if (err) throw err;
       // results is an array consisting of messages collected during execution
       console.log('results: %j', results);
-      res.download('./new.mp4');
+      res.download(String(results[0]));
       //res.sendFile(__dirname +"/downloaded.html");
     });
 })
