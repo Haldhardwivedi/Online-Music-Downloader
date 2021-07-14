@@ -9,8 +9,7 @@ try:
     out_file=video.download()
     prev = os.path.splitext(out_file)[0]
     os.rename(out_file, prev + '.mp3')
-    out_file=prev + '.mp3'
-    print(out_file)
+    print(prev + '.mp3')
     #os.rename(out_file,"new.mp4") 
 except: 
     print("Some Error!") 
