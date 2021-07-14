@@ -7,7 +7,7 @@ try:
     yt =YouTube(vid_link)
     video = yt.streams.filter(only_audio=True).first()
     out_file=video.download()
-    print(out_file')
+    print(out_file)
     #os.rename(out_file,"new.mp4") 
 except: 
     print("Some Error!") 
